@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6</title>
+</head>
+<body>
+    <h1>Total de Vendas Semetrais</h1>
+    <p>Faturamento da Loja <span id="nomeLoja"></span></p>
+    <p>Primeiro Semestre: <span  id="semestre1"></span></p>
+    <p>Segundo Semestre: <span  id="semestre2"></span></p>
+
+    <script>
+        let nomeLoja = prompt("Digite o nome da Loja");
+        let janeiro = Number(prompt("Digite o total de vendas de Janeiro"));
+        let fevereiro = Number(prompt("Digite o total de vendas de Fevereiro"));
+        let marco = Number(prompt("Digite o total de vendas de Maio"));
+        let abril = Number(prompt("Digite o total de vendas de Abril"));
+        let maio = Number(prompt("Digite o total de vendas de Maio"));
+        let junho = Number(prompt("Digite o total de vendas de Junho"));
+        let julho = Number(prompt("Digite o total de vendas de Julho"));
+        let agosto = Number(prompt("Digite o total de vendas de Agosto"));
+        let setembro = Number(prompt("Digite o total de vendas de Setembro"));
+        let outubro = Number(prompt("Digite o total de vendas de Outubro"));
+        let novembro = Number(prompt("Digite o total de vendas de Novembro"));
+        let dezembro = Number(prompt("Digite o total de vendas de Dezembro"));
+
+        let semestre1 = (janeiro + fevereiro + marco + abril + maio + junho);
+        let semestre2 = (julho + agosto + setembro + outubro + novembro + dezembro);
+
+        document.getElementById("nomeLoja").innerHTML=nomeLoja;
+        document.getElementById("semestre1").innerHTML=semestre1.toFixed(2);
+        document.getElementById("semestre2").innerHTML=semestre2.toFixed(2);
+    </script>
+</body>
+</html>

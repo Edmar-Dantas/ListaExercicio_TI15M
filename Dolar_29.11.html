@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+</head>
+<body>
+    <h1>Conversor dolar para real</h1>
+    <p>1 Dolar valendo R$ 5,37</p>
+    <p>Em dolar US$ <span id="dolar"></span></p>
+    <p>Em reais: R$ <span id="reais"></span></p>
+    <script>
+        let dolar = Number(prompt("Digite a quantidade de dólares"));
+        let real = (5.17 * dolar);
+
+        document.getElementById("reais").innerHTML=real.toFixed(2);
+        document.getElementById("dolar").innerHTML=dolar.toFixed(2);
+    </script>
+</body>
+</html>

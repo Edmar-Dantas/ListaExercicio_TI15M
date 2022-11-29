@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+</head>
+<body>
+    <h1>Lanchonete</h1>
+    <p>Nome do Cliente: <span id="cliente"></span></p>
+    <p>Hot Dog: R$ <span id="hotdog"></span></p>
+    <p>Hambúrguer:  R$ <span id="hamburguer"></span></p>
+    <p>Cheeseburguer: R$ <span id="cheeseb"></span></p>
+    <p>Refrigerante em lata: R$ <span id="refri"></span></p>
+    <p>Batata frita: R$ <span id="batata"></span></p>
+    <p>Total: <span id="total"></span></p>
+
+    <script>
+        let cliente = prompt("Digite o nome do cliente");
+        let hotdog = Number(prompt("Digite a quantidade de Hotdogs"));
+        let hamburguer = (1.30 * (Number(prompt("Digite a quantidade de Hambúguers"))));
+        let cheeseb = (1.50 *Number(prompt("Digite a quantidade de Cheeseburguers")));
+        let refri = Number(prompt("Digite a quantidade de Refrigerantes em lata"));
+        let batata = (0.80 * (Number(prompt("Digite a quantidade de Batatas Fritas"))));
+        let total = (hotdog + hamburguer + cheeseb + refri + batata);
+
+        document.getElementById("cliente").innerHTML=cliente;
+        document.getElementById("hotdog").innerHTML=hotdog.toFixed(2);
+        document.getElementById("hamburguer").innerHTML=hamburguer.toFixed(2);
+        document.getElementById("cheeseb").innerHTML=cheeseb.toFixed(2);
+        document.getElementById("refri").innerHTML=refri.toFixed(2);
+        document.getElementById("batata").innerHTML=batata.toFixed(2);
+        document.getElementById("total").innerHTML=total.toFixed(2);
+
+    </script>
+
+</body>
+</html>

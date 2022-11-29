@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7</title>
+</head>
+<body>
+    <h1>Conta corrente</h1>
+    <p>Nome correntista: <span id="nome"></span></p>
+    <p>Banco:  <span id="banco"></span></p>
+    <p>Número da conta: <span id="numeroConta"></span></p>
+    <p>Saldo disponível: <span id="saldo"></span></p>
+    
+    <script>
+        let nome = prompt("Digite o nome do corretista");
+        let banco = prompt("Digite o nome do Banco");
+        let numeroConta = prompt("Digite o número da conta");
+        let credito = Number(prompt("Digite o valor total de cheques a créditar"));
+        let debito = Number(prompt("Digite o valor total de cheques a debitar"));
+        let limite = Number(prompt("Digite o seu limite"));
+        let saldoAtual = Number(prompt("Digite o seu saldo atual"));
+
+        let saldo = ((saldoAtual + credito + limite) - debito);
+
+        document.getElementById("nome").innerHTML=nome;
+        document.getElementById("banco").innerHTML=banco;
+        document.getElementById("numeroConta").innerHTML=numeroConta;
+        document.getElementById("saldo").innerHTML=saldo.toFixed(2);
+        
+    </script>
+
+    </script>
+</body>
+</html>
