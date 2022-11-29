@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01</title>
+</head>
+<body>
+    <h1>Dados do Professor</h1>
+    <p>Nome do professor: <span id="nomeProf"></span></p>
+    <p>Endereço: <span id="endereco"></span></p>
+    <p>Cidade: <span id="cidade"></span></p>
+    <p>UF: <span id="uf"></span></p>
+    <p>CEP: <span id="cep"></span></p>
+    <p>Telefone: <span id="telefone"></span></p>
+    <p>RG: <span id="rg"></span></p>
+    <p>Data de Nascimento: <span id="dataNasc"></span></p>
+    <p>Escolaridade: <span id="escolaridade"></span></p>
+    <p>Curso Lecionado: <span id="curso"></span></p>
+    <script>
+        let nomeProf = prompt("Digite o seu nome");
+        let endereco = prompt("Digite seu endereço completo");
+        let cidade = prompt("Digite sua cidade");
+        let uf = prompt("Digite a sigla do seu estado");
+        let cep = Number(prompt("Digite seu CPF"));
+        let telefone = Number(prompt("Digite seu número de telefone"));
+        let rg = prompt("Digite seu RG");
+        let dataNasc = prompt("Digite a data do seu nascimento");
+        let escolaridade = prompt("Digite seu grau de escolaridade");
+        let curso = prompt("Digite o curso que leciona");
+
+        document.getElementById("nomeProf").innerHTML=nomeProf;
+        document.getElementById("endereco").innerHTML=endereco;
+        document.getElementById("cidade").innerHTML=cidade;
+        document.getElementById("uf").innerHTML=uf;
+        document.getElementById("cep").innerHTML=cep;
+        document.getElementById("telefone").innerHTML=telefone;
+        document.getElementById("rg").innerHTML=rg;
+        document.getElementById("dataNasc").innerHTML=dataNasc;
+        document.getElementById("escolaridade").innerHTML=escolaridade;
+        document.getElementById("curso").innerHTML=curso;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+</head>
+<body>
+    <h1>Boletim Escolar</h1>
+    <p>Primeira nota: <span id="nota1"></span></p>
+    <p>Segunda nota: <span id="nota2"></span></p>
+    <p>Terceira nota: <span id="nota3"></span></p>
+    <p>Frequencia: <span id="frequencia"></span>%</p>
+    <p>Média: <span id="media"></span></p>
+    <script>
+        let nota1 = Number(prompt("Digite a primeira nota"));
+        let nota2 = Number(prompt("Digite a segunda nota"));
+        let nota3 = Number(prompt("Digite a terceira nota"));
+        let frequencia = Number(prompt("Digite sua nota em porcentagem"));
+        let media = Math.floor((nota1 + nota2 + nota3) / 3);
+
+        document.getElementById("nota1").innerHTML=nota1;
+        document.getElementById("nota2").innerHTML=nota2;
+        document.getElementById("nota3").innerHTML=nota3;
+        document.getElementById("frequencia").innerHTML=frequencia;
+        document.getElementById("media").innerHTML=media;
+    </script>
+</body>
+</html>

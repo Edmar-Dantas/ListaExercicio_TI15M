@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atidade 5</title>
+</head>
+<body>
+    <h1>Cronômetro</h1>
+    <p>Horas: <span id="hora"></span></p>
+    <p>Minutos: <span id="minuto"></span></p>
+    <p>Segundos: <span id="segundo"></span></p>
+    <p>Total Segundos: <span id="tSegundo"></span></p>
+
+    <script>
+        let hora = Number(prompt("Digite as horas"));
+        let minuto = Number(prompt("Digite os minutos"));
+        let segundo = Number(prompt("Digite os segundos"));
+        let tSegundo = ((hora * 60 * 60) + (minuto * 60) + (hora))
+
+        document.getElementById("hora").innerHTML=hora;
+        document.getElementById("minuto").innerHTML=minuto;
+        document.getElementById("segundo").innerHTML=segundo;
+        document.getElementById("tSegundo").innerHTML=tSegundo;
+        
+    </script>
+    
+</body>
+</html>

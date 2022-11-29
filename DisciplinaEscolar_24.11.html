@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body>
+    <h1>Disciplina Escolar</h1>
+    <p>Nome da disciplina: <span id="nomeDisc"></span></p>
+    <p>Descrição: <span id="descricao"></span></p>
+    <p>Frequência: <span id="frequencia"></span>%</p>
+    <p>Média mínima para aprovação: <span id="mediaMin"></span></p>
+    <script>
+        let nomeDisc = prompt("Digite o nome da disciplina");
+        let descricao = prompt("Descreva a disciplina");
+        let frequencia = Number(prompt("Escreva em porcentagem a sua frequência"));
+        let mediaMin = Math.floor((prompt("Digite a média mínima para aprovação")));
+
+        document.getElementById("nomeDisc").innerHTML=nomeDisc;
+        document.getElementById("descricao").innerHTML=descricao;
+        document.getElementById("frequencia").innerHTML=frequencia;
+        document.getElementById("mediaMin").innerHTML=mediaMin;
+
+    </script>
+</body>
+</html>
