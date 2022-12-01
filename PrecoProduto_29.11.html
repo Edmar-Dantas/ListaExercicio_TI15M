@@ -16,7 +16,7 @@
         let precoFabrica = Number(prompt("Digite o preço de Fábrica"));
         let imposto = Number(prompt("Digite a porcentagem do imposto"));
         let taxa = Number(prompt("Digite a porcentagem da taxa do distribuidor"));
-        let precoFinal = (precoFabrica - (precoFabrica *((taxa + imposto) / 100)));
+        let precoFinal = (precoFabrica + (precoFabrica *((taxa + imposto) / 100)));
 
         document.getElementById("produto").innerHTML=produto;
         document.getElementById("precoFinal").innerHTML=precoFinal.toFixed(2);
